@@ -116,7 +116,7 @@ def check():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://raw.githubusercontent.com/Jasminesuaila/new-filee/blob/main/Server.txt').text
+    httpCaht = requests.get('https://raw.githubusercontent.com/Jasminesuaila/new-file-/main/Server.').text
     if id in httpCaht:
       print("\033[1;92mYour Token is successfully Approved")
       msg = str(os.geteuid())
